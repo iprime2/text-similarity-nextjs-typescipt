@@ -1,12 +1,10 @@
-#########################################################################
+### NEXTJS Project
 ## Text-similarity
-
 
 This webapp check the similarity between two text.
 
 Link to webapp: 
 https://text-similarity-nextjs-typescipt.vercel.app
-
 
 ###########################################################################
 
