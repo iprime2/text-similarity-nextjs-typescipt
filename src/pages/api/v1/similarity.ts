@@ -5,6 +5,8 @@ import { openai } from '@/lib/openai'
 import { NextApiRequest, NextApiResponse } from 'next'
 import { z } from 'zod'
 import axios from 'axios'
+import { NextResponse } from 'next/server'
+import { getServerSession } from 'next-auth'
 
 const reqSchema = z.object({
   text1: z.string().max(1000),
@@ -94,7 +96,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       return res.status(400).json({ error: error.issues })
     }
 
-    console.log(error)
     return res.status(500).json({ error: 'Internal server error' })
   }
 }
