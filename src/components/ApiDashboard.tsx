@@ -1,5 +1,3 @@
-'use client'
-
 import { authOptions } from '@/lib/auth'
 import { getServerSession } from 'next-auth'
 import { notFound } from 'next/navigation'
