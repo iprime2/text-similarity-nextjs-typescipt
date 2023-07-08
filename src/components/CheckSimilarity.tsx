@@ -82,18 +82,20 @@ const CheckSimilarity: FC<CheckSimilarityProps> = ({ user }) => {
           Check
         </Button>
         <div className='flex flex-col h-[300px] w-[300px] mt-10 mx-auto'>
-          <LargeHeading className='text-3xl mb-5'>Result</LargeHeading>
           {correct && (
-            <CircularProgressbar
-              className='mb-10'
-              value={correct}
-              text={`${correct}%`}
-              styles={buildStyles({
-                textColor: 'white',
-                pathColor: 'green',
-                trailColor: 'red',
-              })}
-            />
+            <>
+              <LargeHeading className='text-3xl mb-5'>Result</LargeHeading>
+              <CircularProgressbar
+                className='mb-10'
+                value={correct}
+                text={`${correct}%`}
+                styles={buildStyles({
+                  textColor: 'white',
+                  pathColor: 'green',
+                  trailColor: 'red',
+                })}
+              />
+            </>
           )}
         </div>
       </div>
