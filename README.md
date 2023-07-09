@@ -1,44 +1,71 @@
-# NEXTJS Project
-## Text-similarity
+# Full Stack Text Similarity Next.js 13, App Router, React, Tailwind, Prisma, MongoDB, OAuth 2.0 and NextAuth 2023
 
-This webapp check the similarity between two text.
+#### https://text-similarity-nextjs-typescipt.vercel.app
 
-Link to webapp: 
-https://text-similarity-nextjs-typescipt.vercel.app
+![Screenshot](demo.png)
+![Screenshot](demo2.png)
 
-###########################################################################
+### Features:
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- Check two text similarity through API call or direct from webapp
+- Generate new API key for authorization
+- Revoke API key and copy API key with one click
+- Table to show api calls
+- Sign In with google account
+- Tailwind design
+- Tailwind animations and effects
+- Full responsiveness
+- Text form validation and handling using react-hook-form
+- Server error handling using custom react-toast
 
-## Getting Started
+### Prerequisites
 
-First, run the development server:
+**Node version 14.x**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+### Cloning the repository
+
+```shell
+git clone https://github.com/AntonioErdeljac/next13-airbnb-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+yarn
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Setup.env file
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+```js
+NEXTAUTH_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+DATABASE_URL=
+REDIS_URL=
+REDIS_SECRET=
+NODE_ENV=production
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Setup Prisma
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```shell
+npx prisma db push
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Start the app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```shell
+yarn run dev
+```
+
+## Available commands
+
+Running commands with npm `yarn run [command]`
+
+| command         | description                              |
+| :-------------- | :--------------------------------------- |
+| `dev`           | Starts a development instance of the app |
+| `lint`          |  Check any javascript error              |
+
