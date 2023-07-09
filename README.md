@@ -61,7 +61,7 @@ yarn run dev
 
 ## Available commands
 
-Running commands with npm `yarn run [command]`
+Running commands with yarn `yarn run [command]`
 
 | command         | description                              |
 | :-------------- | :--------------------------------------- |
