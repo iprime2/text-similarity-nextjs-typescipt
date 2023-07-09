@@ -66,5 +66,6 @@ Running commands with npm `yarn run [command]`
 | command         | description                              |
 | :-------------- | :--------------------------------------- |
 | `dev`           | Starts a development instance of the app |
-| `lint`          |  Check any javascript error              |
+| `lint`          | Check any javascript error               |
+| `build`         | To build the webapp                      |
 
