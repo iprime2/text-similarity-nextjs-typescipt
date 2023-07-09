@@ -36,7 +36,6 @@ yarn
 
 ### Setup.env file
 
-
 ```js
 NEXTAUTH_SECRET=
 GOOGLE_CLIENT_ID=
@@ -50,8 +49,8 @@ NODE_ENV=production
 ### Setup Prisma
 
 ```shell
+npx prisma generate
 npx prisma db push
-
 ```
 
 ### Start the app
