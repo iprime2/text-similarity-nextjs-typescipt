@@ -5,6 +5,7 @@ import LargeHeading from '@/ui/LargeHeading'
 import Paragraph from '@/ui/Paragraph'
 import DocumentationTabs from '@/components/ui/DocumentationTabs'
 import 'simplebar-react/dist/simplebar.min.css'
+import ApiAlert from '@/components/ApiAlert'
 
 export const metadata: Metadata = {
   title: 'Similarity API | Documentation',
@@ -16,8 +17,8 @@ const page: FC = ({}) => {
     <div className='container max-w-7xl mx-auto mt-12 mb-10'>
       <div className='flex flex-col items-center gap-6 '>
         <LargeHeading className='text-3xl'>Making a request</LargeHeading>
-        <Paragraph>api/v1/similarity</Paragraph>
 
+        <ApiAlert type />
         <DocumentationTabs />
       </div>
     </div>

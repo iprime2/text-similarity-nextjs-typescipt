@@ -8,6 +8,7 @@ import Paragraph from '@/ui/Paragraph'
 import Input from '@/ui/Input'
 import Table from '@/components/Table'
 import ApiKeyOptions from './ApiKeyOptions'
+import ApiAlert from './ApiAlert'
 
 const ApiDashboard = async () => {
   const user = await getServerSession(authOptions)
@@ -40,6 +41,7 @@ const ApiDashboard = async () => {
       <LargeHeading className='text-3xl'>
         Welcome back, {user.user.name}
       </LargeHeading>
+      <ApiAlert />
       <div className='flex flex-col md:flex-row gap-4 justify-center md:justify-start items-center'>
         <Paragraph>Your API key:</Paragraph>
         <Input className='w-fit truncate' readOnly value={activeApiKey.key} />
