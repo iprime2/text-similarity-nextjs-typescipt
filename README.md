@@ -2,9 +2,6 @@
 
 #### https://sushil-text-similarity.vercel.app
 
-![Screenshot](demo.png)
-![Screenshot](demo2.png)
-
 ### Features:
 
 - Check two text similarity through API call or direct from webapp
@@ -17,6 +14,9 @@
 - Full responsiveness
 - Text form validation and handling using react-hook-form
 - Server error handling using custom react-toast
+
+![Screenshot](demo.png)
+![Screenshot](demo2.png)
 
 ### Prerequisites
 
