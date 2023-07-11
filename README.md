@@ -1,6 +1,6 @@
 # Full Stack Text Similarity Next.js 13, App Router, React, Tailwind, Prisma, MongoDB, OAuth 2.0 and NextAuth 2023
 
-#### https://text-similarity-nextjs-typescipt.vercel.app
+#### https://sushil-text-similarity.vercel.app
 
 ![Screenshot](demo.png)
 ![Screenshot](demo2.png)
